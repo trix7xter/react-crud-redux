@@ -65,7 +65,7 @@ const BookList = () => {
             <li key={book.id}>
               <div className="book-info">
                 {++i}. {higlightMatch(book.title, titleFilter)} by{' '}
-                {higlightMatch(book.author, authorFilter)}
+                {higlightMatch(book.author, authorFilter)} ({book.source})
               </div>
               <div className="book-actions">
                 <span onClick={() => handleToggleFavorite(book.id)}>
